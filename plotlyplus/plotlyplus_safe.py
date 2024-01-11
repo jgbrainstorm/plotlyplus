@@ -4,6 +4,7 @@
 ###
 import pandas as pd
 import plotly.express as px
+
 pd.DataFrame.px_bar = px.bar
 pd.DataFrame.px_area = px.area
 pd.DataFrame.px_bar_polar = px.bar_polar
