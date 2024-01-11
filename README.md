@@ -16,7 +16,7 @@ from plotlyplus.plotlyplus import *
 
 df.scatter(x='namex',y='namey')
 ```
-This is a small change, but brings a lot of convenience in practical work. Enjoy!
+This is a small and almost trivial tweak, but brings a lot of convenience in daily practical work. Enjoy!
 
 ## Key Features
 - **Better integration of plotly.express functions to pandas dataframe**: Directly integrates Plotly Express plotting functions with pandas DataFrames.
