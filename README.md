@@ -1,7 +1,17 @@
 # PlotlyPlus Module
 
 ## Introduction
-`PlotlyPlus` is a streamlined Python module that seamlessly integrates Plotly Express plotting functions into pandas DataFrames. This tool is designed to enhance the ease and efficiency of visualizing data directly from pandas.
+`PlotlyPlus` is a Python module that simplify the calling of plotly.express function. In standard way, one needs to do the following to create a plot using plotly.exress based on a dataframe, df. 
+
+```python
+px.scatter(df, x='namex',y='namey')
+```
+But in practice, this is a bit annoy. The plotlyplus package add the plotly.express plotting methods to the pandas dataframe class. This will simply the call to the plotting function as:
+
+```python
+df.scatter(x='namex',y='namey')
+```
+This is a small change, but brings a lot of convenience in practical work. Enjoy!
 
 ## Key Features
 - **Seamless Plotly Express Integration**: Directly integrates Plotly Express plotting functions with pandas DataFrames.
@@ -20,8 +30,7 @@ In the standard mode, import `plotlyplus` after pandas to automatically enhance 
 
 
 ```python
-import pandas as pd
-import plotlyplus
+from plotlyplus.plotlyplus import *
 
 df = pd.DataFrame(...)
 fig = df.bar(...)  # Plotly Express function as a DataFrame method
@@ -32,8 +41,7 @@ fig.show()
 In the safe mode, import `plotlyplus_safe` after pandas to automatically enhance DataFrames with Plotly Express functionality. This mode prefixes the Plotly Express functions to minimize namespace conflicts.
 
 ```python
-import pandas as pd
-import plotlyplus_safe
+from plotlyplus.plotlyplus_safe import *
 
 df = pd.DataFrame(...)
 fig = df.px_bar(...)  # Plotly Express function as a DataFrame method
