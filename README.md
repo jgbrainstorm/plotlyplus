@@ -26,6 +26,7 @@ pip install plotlyplus
 ## Usage
 
 ### Standard Mode
+All plotly.express fundtions become methods of pandas dataframe.
 
 ```python
 from plotlyplus.plotlyplus import *
