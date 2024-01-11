@@ -15,7 +15,7 @@ This is a small change, but brings a lot of convenience in practical work. Enjoy
 
 ## Key Features
 - **Better integration of plotly.express functions to pandas dataframe**: Directly integrates Plotly Express plotting functions with pandas DataFrames.
-- **Safe mode**: To avoid naming conflicts, `PlotlyPlus` introduces a 'safe mode' (`plotlyplus_safe`). In this mode, each function is prefixed, ensuring namespace integrity at the cost of slightly reduced convenience.
+- **Safe mode**: To avoid naming conflicts, `PlotlyPlus` introduces a 'safe mode' (`plotlyplus_safe`). In this mode, each plotly.express function is prefixed with `px_``, ensuring namespace integrity at the cost of slightly reduced convenience.
 
 ## Installation
 Install `PlotlyPlus` using pip with the following command:
