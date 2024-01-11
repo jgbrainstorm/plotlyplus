@@ -1,7 +1,7 @@
 # PlotlyPlus Module
 
 ## Introduction
-`PlotlyPlus` is a Python module that simplify the calling of plotly.express function. In standard way, one needs to do the following to create a plot using plotly.exress based on a dataframe, df. 
+`PlotlyPlus` is a Python module that simplify the calling of plotly.express function. In standard way, one needs to do the following to create a plot using plotly.express based on a dataframe, df. 
 
 ```python
 px.scatter(df, x='namex',y='namey')
