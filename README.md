@@ -26,8 +26,6 @@ pip install plotlyplus
 ## Usage
 
 ### Standard Mode
-In the standard mode, import `plotlyplus` after pandas to automatically enhance DataFrames with Plotly Express functionality.
-
 
 ```python
 from plotlyplus.plotlyplus import *
@@ -38,7 +36,7 @@ fig.show()
 ```
 
 ### Safe Mode
-In the safe mode, import `plotlyplus_safe` after pandas to automatically enhance DataFrames with Plotly Express functionality. This mode prefixes the Plotly Express functions to minimize namespace conflicts.
+This mode prefixes the Plotly Express functions with `px_` to minimize namespace conflicts.
 
 ```python
 from plotlyplus.plotlyplus_safe import *
